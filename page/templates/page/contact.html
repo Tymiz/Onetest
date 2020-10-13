@@ -2,4 +2,8 @@
 {% load static %}
 {% block content %}
   <img src="{% static 'Screenshot_5.png' %}" alt=""><br><h1>Contact</h1>
+  <br>
+  {% for image in form  %}
+    <img src="{{image.img.url}}" alt="">
+  {% endfor %}
 {% endblock %}
